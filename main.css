@@ -1,7 +1,7 @@
 *{margin:0; padding:0;}
 
 html{
-    background: #fce6d4;
+    background: #2d7598;
 }
 
 nav ul li{
@@ -17,17 +17,31 @@ nav ul li{
 
 #logo{
     position: absolute;
-    top: -5px;
-    left: -50px;
+    top: -10px;
+    left: -58px;
 }
 
+#swipeButton{
+    position: absolute;
+    left: -210px;
+    top: 8px;
+    visibility: visible;
+}
+
+#swipeClose{
+    position:absolute;
+    top: 24px;
+    left: 347px;
+    visibility: hidden;
+    opacity: 0;
+}
 nav{
     position: relative;
     text-align: center;
-    background: #2d7598;
+    background: #eff9fe;
     padding-top: 25px;
     padding-bottom: 25px;
-    color:#eff9fe;
+    color:white;
     text-decoration: none;
 }
 
@@ -83,5 +97,32 @@ section#overlay nav#close{
     padding:5px;
     font-size: 25px;
     background-color: rgba(50, 50, 50, .9);
+}
 
+section#navOverlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 40px;
+    font-family: SUNN;
+    color: white;
+    width: 0%;
+    height: 100%;
+    background-color: #dead60;
+}
+
+section#navOverlay p{
+    position: relative;
+    top: 0px;
+    left: 20px;
+    line-height: 200%;
+    visibility: hidden; 
+}
+
+hr{
+    height: 1px;
+    position: relative;
+    top: -2px;
+    border: 0px;
+    border-top: 1px solid #fff;
 }

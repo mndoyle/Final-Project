@@ -4,47 +4,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="Viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurants</title>
+    <title>Mary's App</title>
     <link rel=stylesheet media="screen and (max-width:480px)" href="restaurants.css">
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script src="restaurants.js"></script>
+    <script src="final.js"></script>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><img src='images/dinnder.png' alt='logo' width='60' id='logo'></li>
-            <li><a hef='restaurants.html'>Restaurants</a> </li>
-            <li><a hef='deals.html'>Davis Deals</a></li>
+            <li><a href="index.html"><img src='images/dinnder.png' alt='logo' width='120' id='logo'></a></li>
+        <li><img src='images/swipeButton.png' alt='swipe' width='50' id='swipeButton'></li>
         </ul>
     </nav>
-    <section id='list'>
-        <ul>
-        <li>El Burrito</li>
-        <li>El Toro</li>
-        <li>Thai Canteen</li>
-        <li>Sophia's</li>
-        <li>In N' Out</li>
-        <li>Plutos</li>
-        <li>Burgers and Brew</li>
-        <li>Crepeville</li>
-        <li>Pasanos</li>
-        <li>Dos Coyotos</li>
-        <li>Redrum</li>
-        <li>Open Rice Kitchen</li>
-        <li>Mikunis</li>
-        <li>Habit</li>
-        <li>Blaze</li>
-        <li>Woodstocks</li>
-        <li>Vitos</li>
-            
-        </ul>
-    </section>
+    <h1>Restaurants in Davis</h1>
+    <section id='sortBy'>
+    <h3>Sort By</h3></section>
     <footer>
     <img src='images/helper.png' alt='helper' width='70' id='helper'>
     </footer>
+    <section id='navOverlay'>
+         <p><a href='restaurants.html'>Restaurants</a></p>
+        <hr>
+        <p><a href='deals.html'>Davis Deals</a></p>
+        <hr>
+    </section>
+    <section id='navClose'>
+        <img src='images/swipeButton.png' alt='swipe' width='50' id='swipeClose'>
+        </section>
     <section id='overlay'>
-        <p>Hello! Hope this works!</p>
+        <p>Instructions for how Dinnder works.</p>
         <nav id="close">x</nav>
     </section>
 </body>
