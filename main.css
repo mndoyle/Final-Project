@@ -58,6 +58,7 @@ section#startButton{
     position:relative;
     top:30px;
     text-align: center;   
+    visibility: visible;
 }
 
 footer{
@@ -125,4 +126,29 @@ hr{
     top: -2px;
     border: 0px;
     border-top: 1px solid #fff;
+}
+
+h4{
+    position: absolute;
+    top:140px;
+    font-family: SUNN;
+    font-size:30px;
+    color:white;
+    left: 80px;
+}
+
+section#questionOne p{
+    color:white;
+    font-family: SUNN;
+    margin-left: 180px;
+    margin-top: -40px;
+}
+
+section#questionTwo h6{
+    color:white;
+    font-family: SUNN;
+    font-size:30px;
+    margin-left:140px;
+    margin-top:-150px;
+    
 }

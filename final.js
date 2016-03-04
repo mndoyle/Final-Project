@@ -51,18 +51,64 @@ $(function () {
             left: '0',
         });
 
-        $('section p').css('visibility', 'visible');
+        $('section#overlay p').css('visibility', 'visible');
         return false;
     });
 
     $('nav#close').click(function () {
         console.log('click');
         $('section#overlay').css('width', '0px');
-        $('section p').css('visibility', 'hidden');
+        $('section#overlay p').css('visibility', 'hidden');
         return false;
     });
-})
+
 
 // Restaurants
 
 // Sort By
+    $('#options').hide();
+    $('#triangle').click(function(){
+        console.log('slide toggle');
+        $('#options').slideToggle();
+    });
+    
+    $('#ethnicity').click(function(){
+        console.log('click');
+        $('#alpha').css('visibility','hidden')
+        $('#ethnic').css('visibility','visible')
+        $('#options').slideToggle();
+    });
+    
+    $('#alphabetical').click(function(){
+        console.log('click');
+        $('#ethnic').css('visibility','hidden')
+        $('#alpha').css('visibility','visible')
+        $('#options').slideToggle();
+    });
+
+//Question 1
+$('#questionOne').hide();
+$('#startButton').click(function(){
+    console.log('Start Button Click');
+    $('#startButton').css('visibility','hidden');
+    $('section#questionOne').show();
+});
+    $('h6').hide();
+    $('h5').hide();
+    
+    //Question 2
+    
+    $('p#qoneAnswerOne').click(function(){
+    console.log('Question One Answer One Clicked');
+    $('section#questionOne').css('visibility','hidden');
+    $('h6').show();
+});
+    
+    $('p#qoneAnswerThree').click(function(){
+    console.log('Question One Answer Three Clicked');
+    $('section#questionOne').css('visibility','hidden');
+    $('h5').show();
+});
+    
+
+     })

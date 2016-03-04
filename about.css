@@ -135,3 +135,6 @@ h1{
     font-size: 30px;
 }
 
+section#mainText p{
+    color: white;
+}
